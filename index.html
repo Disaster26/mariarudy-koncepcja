@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow" data-podglad>
+<title>Konserwator zabytków i dzieł sztuki w Toruniu - Maria Rudy</title>
+<meta name="description" content="Maria Rudy - konserwacja i restauracja malarstwa, rzeźby kamiennej, ceramiki i zabytków metalowych, ekspertyzy i projekty konserwatorskie. Toruń.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" as="font" type="font/woff2" href="fonts/jost-rdzen.woff2" crossorigin>
+<link rel="preload" as="image" href="img/hero-1600.webp" imagesrcset="img/hero-960.webp 960w, img/hero-1600.webp 1600w, img/hero-2400.webp 2400w, img/hero-3200.webp 3200w, img/hero-3968.webp 3968w" imagesizes="100vw" fetchpriority="high">
+<style>
+@font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2026,U+20AC}
+@font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:Lora;font-weight:400 700;font-display:swap;src:url(fonts/lora-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026}
+@font-face{font-family:Lora;font-weight:400 700;font-display:swap;src:url(fonts/lora-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+:root{
+  --ink:#111214;      /* czern logo */
+  --ciemna:#15161A;
+  --tekst:#2A2B2F;
+  --szary:#5E6168;
+  --tlo2:#EEF0F2;     /* chlodna szarosc sekcji */
+  --linia:#D9DCE1;
+  --zloto:#C29436;    /* zlocenie z realizacji */
+  --zloto-t:#8A6420;  /* zloto do tekstu na bieli */
+  --w:min(92vw,1640px);
+  --hdr:72px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:var(--hdr)}
+body{margin:0;background:#fff;color:var(--tekst);font:400 18px/1.65 Lora,Georgia,serif;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:Jost,"Helvetica Neue",Arial,sans-serif;color:var(--ink);font-weight:500;line-height:1.15;margin:0}
+h2{font-size:clamp(30px,3.2vw,52px);letter-spacing:-.01em}
+h3{font-size:20px;font-weight:500}
+p{margin:0 0 1em}
+.wrap{width:var(--w);margin:0 auto}
+.btn{display:inline-block;font:500 17px/1 Jost,Arial,sans-serif;text-decoration:none;padding:18px 30px;background:var(--zloto);color:var(--ink);border:0;cursor:pointer;transition:background .2s}
+.btn:hover{background:#D6A847}
+/* odkrywka: okienko konserwatorskie na linii */
+.odk{display:flex;align-items:center;gap:0;margin:22px 0 0;width:120px;height:12px}
+.odk::before{content:"";width:12px;height:12px;background:var(--zloto);flex:none}
+.odk::after{content:"";height:1px;flex:1;background:currentColor;opacity:.35}
+
+/* naglowek */
+.hdr{position:sticky;top:0;z-index:20;height:var(--hdr);background:#fff;border-bottom:1px solid var(--linia)}
+.hdr .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{text-decoration:none;color:var(--ink);font-family:Jost,Arial,sans-serif;line-height:1}
+.logo b{display:block;font-weight:400;font-size:27px;letter-spacing:.02em}
+.logo span{display:flex;align-items:center;gap:8px;font-size:15px;margin-top:5px;color:var(--tekst)}
+.logo span::before{content:"";width:7px;height:7px;background:var(--zloto)}
+.menu{display:flex;gap:clamp(18px,2.2vw,40px);font:400 17px/1 Jost,Arial,sans-serif}
+.menu a{text-decoration:none;padding:8px 0;border-bottom:1px solid transparent}
+.menu a:hover,.menu a.akt{border-color:var(--zloto)}
+.burger{display:none;background:none;border:0;width:46px;height:46px;padding:11px;cursor:pointer}
+.burger i{display:block;height:2px;background:var(--ink);margin:6px 0}
+
+/* pierwszy ekran */
+.hero{position:relative;min-height:calc(100svh - var(--hdr));display:flex;align-items:center;color:#fff;overflow:hidden;background:#2b4f74}
+.hero-f{position:absolute;inset:0}
+.hero-f img{width:100%;height:100%;object-fit:cover;object-position:40% 2%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(270deg,rgba(10,14,22,.78) 0%,rgba(10,14,22,.55) 32%,rgba(10,14,22,0) 58%)}
+.hero .wrap{position:relative;z-index:2;display:flex;justify-content:flex-end;padding:48px 0}
+.hero-t{width:min(640px,44vw)}
+.hero h1{color:#fff;font-size:clamp(40px,3.9vw,68px);font-weight:500;letter-spacing:-.01em}
+.hero h1 span{display:block;font-weight:300;font-size:.62em;margin-top:.35em;line-height:1.25}
+.hero p.lead{font-size:clamp(18px,1.25vw,21px);margin:26px 0 32px;color:#F1EEE8;max-width:34em}
+.hero .podpis{position:absolute;z-index:2;left:max(4vw,calc((100vw - 1640px)/2));bottom:22px;font:400 14px/1.4 Jost,Arial,sans-serif;color:#fff;opacity:.92;text-shadow:0 1px 6px rgba(0,0,0,.6)}
+
+/* przed i po */
+.sek{padding:clamp(64px,8vw,130px) 0}
+.intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,90px);align-items:end;margin-bottom:clamp(32px,4vw,56px)}
+.intro p{max-width:38em;margin:0;color:var(--szary)}
+.tor{display:flex;gap:clamp(14px,1.6vw,26px);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:6px;cursor:grab}
+.tor::-webkit-scrollbar{display:none}
+.tor.chwyt{cursor:grabbing;scroll-snap-type:none}
+.tor img{-webkit-user-drag:none;user-select:none}
+.pp{margin:0;flex:none;scroll-snap-align:start;width:calc(470px * var(--r));max-width:var(--w)}
+.pp img{height:470px;width:100%;object-fit:cover;background:var(--tlo2)}
+.pp figcaption,.wc figcaption{padding-top:14px;font:400 16px/1.45 Jost,Arial,sans-serif;max-width:46em}
+.pp figcaption b,.wc figcaption b{display:block;font-weight:500;color:var(--ink)}
+.pp figcaption span,.wc figcaption span{color:var(--szary)}
+.strz{display:flex;gap:10px;margin-top:26px}
+.strz button{width:52px;height:52px;border:1px solid var(--ink);background:#fff;cursor:pointer;font:400 22px/1 Jost,Arial,sans-serif;color:var(--ink)}
+.strz button:hover{background:var(--ink);color:#fff}
+.wst{padding-left:max(4vw,calc((100vw - 1640px)/2));scroll-padding-left:max(4vw,calc((100vw - 1640px)/2));padding-right:4vw}
+
+/* zakres */
+.zakres{background:var(--tlo2)}
+.kol{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(28px,4vw,72px);margin-top:clamp(36px,4vw,60px)}
+.kol h3{font-size:clamp(22px,1.6vw,27px);padding-top:22px;border-top:1px solid var(--ink);position:relative;margin-bottom:16px}
+.kol h3::before{content:"";position:absolute;left:0;top:-6px;width:12px;height:12px;background:var(--zloto)}
+.kol p{color:var(--tekst)}
+.materialy{margin-top:clamp(36px,4vw,56px);font:400 18px/1.6 Jost,Arial,sans-serif;color:var(--ink)}
+.materialy span{color:var(--szary)}
+
+/* realizacje */
+.siatka{--g:clamp(20px,2vw,34px);display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--g)}
+.rz{min-width:0}
+.rz.szer{grid-column:span 2}
+.rz-f{aspect-ratio:4/5;overflow:hidden;background:var(--tlo2);margin-bottom:16px;position:relative}
+.rz-f,.rz.szer .rz-f{aspect-ratio:auto;height:calc((var(--w) - 3*var(--g))/4*1.25)}
+.rz-f img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.rz:hover .rz-f img{transform:scale(1.03)}
+.rz-f::after{content:"";position:absolute;right:14px;bottom:14px;width:12px;height:12px;background:var(--zloto)}
+.rz h3{font-size:clamp(19px,1.25vw,22px);margin-bottom:4px}
+.rz .miejsce{font:400 15px/1.4 Jost,Arial,sans-serif;color:var(--zloto-t);margin-bottom:8px}
+.rz p:last-child{font-size:16px;color:var(--szary);margin:0}
+.wczesniej{margin-top:clamp(56px,6vw,96px);padding-top:30px;border-top:1px solid var(--linia)}
+.wczesniej h3{font-size:clamp(22px,1.6vw,27px);margin-bottom:24px}
+.wcz{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(16px,2vw,30px)}
+.wc{margin:0;min-width:0}
+.wc img{width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--tlo2)}
+.dalej{margin-top:34px;font:400 17px/1.5 Jost,Arial,sans-serif;color:var(--szary)}
+
+/* dorobek - ciemna sekcja */
+.dorobek{background:var(--ciemna);color:#D8D9DC}
+.dorobek h2,.dorobek h3{color:#fff}
+.dor{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:clamp(36px,6vw,110px)}
+.dor .odk{color:#fff}
+.lista{list-style:none;margin:34px 0 0;padding:0;font:400 17px/1.5 Jost,Arial,sans-serif}
+.lista li{display:grid;grid-template-columns:118px minmax(0,1fr);gap:18px;padding:15px 0;border-top:1px solid rgba(255,255,255,.14)}
+.lista li b{color:var(--zloto);font-weight:500}
+.prawa{display:flex;flex-direction:column;gap:34px}
+.osoba{display:flex;gap:26px;align-items:flex-end}
+.osoba img{width:200px;flex:none;outline:1px solid rgba(255,255,255,.25);outline-offset:8px}
+.osoba p{font:400 16px/1.5 Jost,Arial,sans-serif;margin:0;color:#B9BBC0}
+blockquote{margin:0;padding:28px 0 0;border-top:1px solid var(--zloto);font-size:clamp(20px,1.5vw,25px);line-height:1.5;color:#fff}
+blockquote b{display:block;margin-top:14px;font:500 clamp(26px,2.2vw,36px)/1.2 Jost,Arial,sans-serif;color:var(--zloto)}
+.wyr h3{font-size:22px;margin-bottom:12px}
+.wyr p{font-size:16px;color:#C3C5CA}
+
+/* kontakt */
+.kontakt{background:var(--tlo2)}
+.kon{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(36px,6vw,110px)}
+.kon .mail{display:inline-block;margin-top:10px;font:500 clamp(22px,1.8vw,30px)/1.3 Jost,Arial,sans-serif;color:var(--ink);text-decoration:none;border-bottom:2px solid var(--zloto)}
+form{display:grid;gap:16px}
+label{font:500 15px/1.3 Jost,Arial,sans-serif;color:var(--ink);display:grid;gap:7px}
+input,textarea{font:400 17px/1.4 Lora,Georgia,serif;padding:14px 15px;border:1px solid #C3C7CD;background:#fff;color:var(--ink);width:100%;border-radius:0}
+input:focus,textarea:focus{outline:2px solid var(--zloto);outline-offset:0;border-color:transparent}
+textarea{min-height:140px;resize:vertical}
+.rzad{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.uwaga{font:400 15px/1.4 Jost,Arial,sans-serif;color:var(--szary);min-height:1.4em;margin:0}
+
+/* stopka */
+.stopka{background:var(--ink);color:#B4B6BB;padding:34px 0;font:400 15px/1.5 Jost,Arial,sans-serif}
+.stopka .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px 30px;align-items:center}
+.stopka b{color:#fff;font-weight:500}
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+@media (max-width:1200px){
+  .siatka{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .rz.szer{grid-column:span 2}
+  .rz-f,.rz.szer .rz-f{height:calc((var(--w) - var(--g))/2*1.25)}
+  .kol{grid-template-columns:1fr}
+  .hero-t{width:min(600px,52vw)}
+}
+@media (max-width:980px){
+  .menu{display:none;position:absolute;top:var(--hdr);left:0;right:0;flex-direction:column;gap:0;background:#fff;border-bottom:1px solid var(--linia);padding:8px 4vw 18px}
+  .menu.otw{display:flex}
+  .menu a{padding:15px 0;border-bottom:1px solid var(--linia);font-size:19px}
+  .burger{display:block}
+  .dor,.kon,.intro{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  :root{--hdr:64px}
+  body{font-size:17px}
+  .logo b{font-size:23px}.logo span{font-size:13.5px}
+  .hero{align-items:flex-end}
+  .hero-f img{object-position:33% 0}
+  .hero::after{background:linear-gradient(0deg,rgba(10,14,22,.9) 0%,rgba(10,14,22,.72) 38%,rgba(10,14,22,0) 66%)}
+  .hero .wrap{padding:0 0 36px}
+  .hero-t{width:100%}
+  .hero h1{font-size:clamp(31px,8.6vw,40px)}
+  .hero p.lead{font-size:16.5px;margin:16px 0 26px}
+  .hero .podpis{display:none}
+  .pp{width:calc(300px * var(--r));max-width:86vw}
+  .pp img{height:300px}
+  .siatka{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;gap:16px;width:auto;margin-right:-4vw;padding-right:4vw}
+  .siatka::-webkit-scrollbar{display:none}
+  .rz{flex:none;width:78vw;scroll-snap-align:start}
+  .rz.szer{width:86vw}
+  .rz-f,.rz.szer .rz-f{height:auto;aspect-ratio:4/5}
+  .rz.szer .rz-f{aspect-ratio:8/5}
+  .wcz{grid-template-columns:1fr 1fr}
+  .lista li{grid-template-columns:1fr;gap:4px}
+  .osoba{flex-direction:column;align-items:flex-start}
+  .osoba img{width:160px}
+  .rzad{grid-template-columns:1fr}
+  .stopka .wrap{display:grid;grid-template-columns:1fr 1fr}
+  .stopka .wrap > :first-child{grid-column:1/-1}
+}
+@media (max-height:700px) and (max-width:760px){
+  .hero h1{font-size:clamp(28px,7.8vw,34px)}
+  .hero .wrap{padding-bottom:28px}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="hdr">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Maria Rudy - strona główna"><b>MARIA RUDY</b><span>Konserwator dzieł sztuki</span></a>
+    <nav class="menu" id="menu">
+      <a href="#przed-i-po">Przed i po</a>
+      <a href="#zakres">Zakres prac</a>
+      <a href="#realizacje">Realizacje</a>
+      <a href="#dorobek">Dorobek</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><i></i><i></i><i></i></button>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-f"><img fetchpriority="high" src="img/hero-1600.webp" srcset="img/hero-960.webp 960w, img/hero-1600.webp 1600w, img/hero-2400.webp 2400w, img/hero-3200.webp 3200w, img/hero-3968.webp 3968w" sizes="100vw" width="1600" height="1129" alt="Kopia Madonny Apokaliptycznej na gotyckim szczycie kościoła WNMP w Żaganiu"></div>
+  <div class="wrap">
+    <div class="hero-t">
+      <h1>Konserwator zabytków i dzieł sztuki w Toruniu<span>Przywracam dawny blask malarstwu, rzeźbie i rzemiosłu</span></h1>
+      <p class="lead">Konserwacja i restauracja malarstwa, rzeźby kamiennej, ceramiki i zabytków metalowych. Ekspertyzy, projekty i nadzory konserwatorskie.</p>
+      <a class="btn" href="#realizacje">Zobacz realizacje</a>
+    </div>
+  </div>
+  <p class="podpis">Kopia Madonny Apokaliptycznej na szczycie kościoła WNMP w Żaganiu, 2017</p>
+</section>
+
+<section class="sek" id="przed-i-po">
+  <div class="wrap intro">
+    <div>
+      <h2>Spod nawarstwień wraca oryginał</h2>
+      <div class="odk"></div>
+    </div>
+    <p>Konserwacja zaczyna się od odkrywki: małego okienka, w którym spod brudu, przemalowań i dawnych napraw widać pierwotną warstwę. Z niego wynika cały program prac. Poniżej kilka obiektów przed konserwacją i po niej.</p>
+  </div>
+  <div class="tor wst" id="tor-pp">
+<figure class="pp" style="--r:2.181"><img src="img/pp-komorowski-900.webp" srcset="img/pp-komorowski-900.webp 900w, img/pp-komorowski-1400.webp 1400w, img/pp-komorowski-2000.webp 2000w" sizes="(max-width:760px) 654px, 1025px" width="900" height="412" alt="Portret abpa Adama Komorowskiego przed i po konserwacji oraz detal twarzy" loading="lazy" decoding="async"><figcaption><b>Portret abpa Adama Komorowskiego, olej na blasze miedzianej, po 1759 r.</b><span>Archikatedra Gnieźnieńska, 2019/20</span></figcaption></figure>
+<figure class="pp" style="--r:2.083"><img src="img/pp-majolika-900.webp" srcset="img/pp-majolika-900.webp 900w, img/pp-majolika-1400.webp 1400w, img/pp-majolika-2000.webp 2000w" sizes="(max-width:760px) 625px, 979px" width="900" height="432" alt="Dwa majolikowe talerze przed i po konserwacji" loading="lazy" decoding="async"><figcaption><b>Dwa majolikowe talerze z malarstwem olejnym, ok. 1880 r.</b><span>kolekcja prywatna, 2019</span></figcaption></figure>
+<figure class="pp" style="--r:0.907"><img src="img/pp-krucyfiks-700.webp" srcset="img/pp-krucyfiks-700.webp 700w, img/pp-krucyfiks-1100.webp 1100w, img/pp-krucyfiks-1600.webp 1600w" sizes="(max-width:760px) 272px, 426px" width="700" height="772" alt="Neogotycki krucyfiks ołtarzowy przed i po konserwacji" loading="lazy" decoding="async"><figcaption><b>Neogotycki krucyfiks ołtarzowy, XIX w.</b><span>obecnie kościół ewangelicko-augsburski w Słupsku, 2019</span></figcaption></figure>
+<figure class="pp" style="--r:0.909"><img src="img/pp-plyta-700.webp" srcset="img/pp-plyta-700.webp 700w, img/pp-plyta-1100.webp 1100w, img/pp-plyta-1600.webp 1600w" sizes="(max-width:760px) 273px, 427px" width="700" height="770" alt="Kamienna płyta inskrypcyjna przed i po konserwacji" loading="lazy" decoding="async"><figcaption><b>Polichromowana płyta inskrypcyjna, ok. 1558 r.</b><span>kościół WNMP w Szprotawie, 2017/18</span></figcaption></figure>
+<figure class="pp" style="--r:1.134"><img src="img/pp-relief-700.webp" srcset="img/pp-relief-700.webp 700w, img/pp-relief-1100.webp 1100w, img/pp-relief-1600.webp 1600w" sizes="(max-width:760px) 340px, 533px" width="700" height="618" alt="Fragment płyty nagrobnej przed i po oczyszczeniu" loading="lazy" decoding="async"><figcaption><b>Płyta nagrobna Hansa von Schoenaich, fragment przed i po oczyszczeniu</b><span>kościół WNMP w Szprotawie, 2017/18</span></figcaption></figure>
+<figure class="pp" style="--r:1.359"><img src="img/pp-krzyz-900.webp" srcset="img/pp-krzyz-900.webp 900w, img/pp-krzyz-1400.webp 1400w, img/pp-krzyz-2000.webp 2000w" sizes="(max-width:760px) 408px, 639px" width="900" height="662" alt="Detal portretu: order przed i po konserwacji" loading="lazy" decoding="async"><figcaption><b>Detal portretu abpa Komorowskiego: order przed i po</b><span>Archikatedra Gnieźnieńska, 2019/20</span></figcaption></figure>
+<figure class="pp" style="--r:1.217"><img src="img/pp-perizonium-800.webp" srcset="img/pp-perizonium-800.webp 800w, img/pp-perizonium-1200.webp 1200w, img/pp-perizonium-1800.webp 1800w" sizes="(max-width:760px) 365px, 572px" width="800" height="657" alt="Perizonium krucyfiksu przed i po konserwacji złoceń" loading="lazy" decoding="async"><figcaption><b>Perizonium krucyfiksu przed i po odsłonięciu złoceń</b><span>krucyfiks ołtarzowy, 2019</span></figcaption></figure>
+  </div>
+  <div class="wrap strz"><button type="button" data-tor="tor-pp" data-k="-1" aria-label="Poprzednie">&larr;</button><button type="button" data-tor="tor-pp" data-k="1" aria-label="Następne">&rarr;</button></div>
+</section>
+
+<section class="sek zakres" id="zakres">
+  <div class="wrap">
+    <h2>Zakres prac</h2>
+    <div class="odk"></div>
+    <div class="kol">
+      <div>
+        <h3>Konserwacja i restauracja</h3>
+        <p>Konserwacja-restauracja malarstwa na różnych podłożach, także na rzeźbie kamiennej i detalach architektonicznych. Konserwacja ceramiki artystycznej i użytkowej, badania technologiczne zabytków. Kopie malarskie, m.in. zabytkowej ceramiki, wykonywane w technologii konserwatorskiej.</p>
+      </div>
+      <div>
+        <h3>Rzeczoznawstwo</h3>
+        <p>Rzeczoznawca Ministra Kultury i Sztuki, a następnie Ministra Kultury i Dziedzictwa Narodowego w latach 1983-2016, w specjalności konserwacja rzeźby kamiennej i detalu architektonicznego oraz ceramiki artystycznej i użytkowej. Rzeczoznawca ZPAP od 1991 r. i SKZ od 2009 r.</p>
+      </div>
+      <div>
+        <h3>Ekspertyzy i projekty konserwatorskie</h3>
+        <p>Ekspertyzy technologiczno-konserwatorskie i projekty dla zabytków kamiennych, ceglanych i ceramicznych, badania stanu zachowania, wytyczne i programy prac. Nadzory konserwatorskie przy cennych zabytkach architektury sakralnej i świeckiej.</p>
+      </div>
+    </div>
+    <p class="materialy">Kamień i alabaster, ceramika i kafle, polichromie i złocenia, blacha miedziana i cynowa, bursztyn, drewno polichromowane <span>- od antycznych amfor po XIX-wieczną majolikę.</span></p>
+  </div>
+</section>
+
+<section class="sek" id="realizacje">
+  <div class="wrap">
+    <div class="intro">
+      <div>
+        <h2>Wybrane realizacje</h2>
+        <div class="odk"></div>
+      </div>
+      <p>Prace z ostatnich lat: od miedzianej Immaculaty z gotyckiego szczytu w Żaganiu po portret arcybiskupa na blasze miedzianej z Gniezna. Każda realizacja na docelowej stronie dostanie własną galerię z etapami prac.</p>
+    </div>
+    <div class="siatka">
+<article class="rz"><div class="rz-f"><img src="img/r-immaculata-600.webp" srcset="img/r-immaculata-600.webp 600w, img/r-immaculata-900.webp 900w, img/r-immaculata-1400.webp 1400w" sizes="(max-width:760px) 82vw, (max-width:1200px) 46vw, 25vw" width="600" height="565" alt="Srebrzona i złocona kopia Madonny Apokaliptycznej" loading="lazy" decoding="async"></div><h3>Kopia Madonny Apokaliptycznej (Immaculaty)</h3><p class="miejsce">Żagań, kościół WNMP, 2017</p><p>Repusowana blacha miedziana, srebrzona i złocona, osadzona na gotyckim szczycie zachodnim.</p></article>
+<article class="rz"><div class="rz-f"><img src="img/r-sukienka-600.webp" srcset="img/r-sukienka-600.webp 600w, img/r-sukienka-900.webp 900w, img/r-sukienka-1400.webp 1400w" sizes="(max-width:760px) 82vw, (max-width:1200px) 46vw, 25vw" width="600" height="673" alt="Obraz Matki Bożej Brzemiennej w srebrnej sukience po konserwacji" loading="lazy" decoding="async"></div><h3>Rokokowa sukienka z renesansowego obrazu</h3><p class="miejsce">Chełmoń, kościół św. Bartłomieja, 2018</p><p>Srebrna, pozłacana sukienka z obrazu Matki Bożej Brzemiennej.</p></article>
+<article class="rz"><div class="rz-f"><img src="img/r-komorowski-600.webp" srcset="img/r-komorowski-600.webp 600w, img/r-komorowski-900.webp 900w, img/r-komorowski-1400.webp 1400w" sizes="(max-width:760px) 82vw, (max-width:1200px) 46vw, 25vw" width="600" height="723" alt="Portret abpa Adama Komorowskiego po konserwacji" loading="lazy" decoding="async"></div><h3>Portret abpa Adama Komorowskiego</h3><p class="miejsce">Archikatedra Gnieźnieńska, 2019/20</p><p>Olej na blasze miedzianej, lico i odwrocie, po wcześniejszych naprawach.</p></article>
+<article class="rz"><div class="rz-f"><img src="img/r-majolika-600.webp" srcset="img/r-majolika-600.webp 600w, img/r-majolika-900.webp 900w, img/r-majolika-1400.webp 1400w" sizes="(max-width:760px) 82vw, (max-width:1200px) 46vw, 25vw" width="600" height="678" alt="Pejzaże na majolikowych talerzach po konserwacji" loading="lazy" decoding="async"></div><h3>Dwa majolikowe talerze, ok. 1880 r.</h3><p class="miejsce">kolekcja prywatna, 2019</p><p>Szkliwiona majolika malowana "na zimno", w złoconych ramach-tondach.</p></article>
+<article class="rz"><div class="rz-f"><img src="img/r-krucyfiks-600.webp" srcset="img/r-krucyfiks-600.webp 600w, img/r-krucyfiks-900.webp 900w, img/r-krucyfiks-1400.webp 1400w" sizes="(max-width:760px) 82vw, (max-width:1200px) 46vw, 25vw" width="600" height="738" alt="Krucyfiks ołtarzowy w ołtarzu kościoła w Słupsku" loading="lazy" decoding="async"></div><h3>Krucyfiks ołtarzowy, XIX w.</h3><p class="miejsce">Słupsk, 2019</p><p>Neogotycki krucyfiks z polichromią i złoceniami, dziś w ołtarzu głównym.</p></article>
+<article class="rz"><div class="rz-f"><img src="img/r-kula-600.webp" srcset="img/r-kula-600.webp 600w, img/r-kula-900.webp 900w, img/r-kula-1200.webp 1200w" sizes="(max-width:760px) 82vw, (max-width:1200px) 46vw, 25vw" width="600" height="800" alt="Miedziana kula na hełmie wieży kościoła w Żaganiu" loading="lazy" decoding="async"></div><h3>Kula miedziana z hełmu wieży</h3><p class="miejsce">Żagań, kościół WNMP, 2020</p><p>Kula zniszczona w czasie wojny, przygotowana do ponownej ekspozycji zewnętrznej.</p></article>
+<article class="rz szer"><div class="rz-f"><img src="img/r-gwiazda-600.webp" srcset="img/r-gwiazda-600.webp 600w, img/r-gwiazda-900.webp 900w, img/r-gwiazda-1400.webp 1400w, img/r-gwiazda-2000.webp 2000w" sizes="(max-width:760px) 86vw, (max-width:1200px) 92vw, 50vw" width="600" height="302" alt="Miedziana kopia gwiazdy z hełmu wieży, złocona i patynowana" loading="lazy" decoding="async"></div><h3>Kopia gwiazdy z hełmu wieży</h3><p class="miejsce">Żagań, kościół WNMP, 2020</p><p>Złocenia i imitacja zielonej patyny szlachetnej na miedzianej kopii.</p></article>
+    </div>
+    <div class="wczesniej">
+      <h3>Wcześniejsze prace</h3>
+      <div class="wcz">
+<figure class="wc"><img src="img/w-kabinet-600.webp" srcset="img/w-kabinet-600.webp 600w, img/w-kabinet-1034.webp 1034w" sizes="(max-width:760px) 46vw, 24vw" width="600" height="348" alt="Kabinet bursztynowy króla Stanisława Augusta" loading="lazy" decoding="async"><figcaption><b>Kabinet bursztynowy króla Stanisława Augusta</b><span>Muzeum Zamkowe w Malborku, 2013</span></figcaption></figure>
+<figure class="wc"><img src="img/w-sarkofag-600.webp" srcset="img/w-sarkofag-600.webp 600w, img/w-sarkofag-1082.webp 1082w" sizes="(max-width:760px) 46vw, 24vw" width="600" height="333" alt="Zdobiony sarkofag miedziany Elizabeth von Arnim" loading="lazy" decoding="async"><figcaption><b>Sarkofag Elizabeth von Arnim (1661)</b><span>Trzebnica, 2015 - Dolnośląski Laur Konserwatorski 2017</span></figcaption></figure>
+<figure class="wc"><img src="img/w-opalinscy-600.webp" srcset="img/w-opalinscy-600.webp 600w, img/w-opalinscy-1226.webp 1226w" sizes="(max-width:760px) 46vw, 24vw" width="600" height="294" alt="Sarkofagi rodu Opalińskich w krypcie" loading="lazy" decoding="async"><figcaption><b>Sarkofagi rodu Opalińskich, XVII w.</b><span>Sieraków, 1991-1993</span></figcaption></figure>
+<figure class="wc"><img src="img/w-kafle-600.webp" srcset="img/w-kafle-600.webp 600w, img/w-kafle-1189.webp 1189w" sizes="(max-width:760px) 46vw, 24vw" width="600" height="303" alt="Renesansowe kafle portretowe przed i po konserwacji" loading="lazy" decoding="async"><figcaption><b>Renesansowe kafle portretowe</b><span>Lidzbark Warmiński i Gdańsk, 1995 i 1997</span></figcaption></figure>
+      </div>
+      <p class="dalej">A także m.in. Wielki Piec z Dworu Artusa w Gdańsku (kierownictwo prac i 90 renesansowych kafli, 1985-91), macewy z cmentarza żydowskiego na Powązkach, reliefy Hansa Brandta i epitafia w Katedrze Gnieźnieńskiej, bursztynowy relikwiarz Michela Redlina z Malborka.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sek dorobek" id="dorobek">
+  <div class="wrap dor">
+    <div>
+      <h2>Ponad pół wieku przy zabytkach</h2>
+      <div class="odk"></div>
+      <ul class="lista">
+        <li><b>od 1965</b><span>Studia konserwatorskie na Wydziale Sztuk Pięknych UMK w Toruniu</span></li>
+        <li><b>od 1970</b><span>Zakład Konserwacji Elementów i Detali Architektonicznych UMK; od 2016 r. aktywny nieetatowy nauczyciel akademicki</span></li>
+        <li><b>1976</b><span>Kurs „Fundamental Principles of Conservation” w ICCROM w Rzymie</span></li>
+        <li><b>1983-2016</b><span>Rzeczoznawca Ministra Kultury (MKiS, następnie MKiDN)</span></li>
+        <li><b>od 1991</b><span>Rzeczoznawca ZPAP, od 2009 r. także SKZ</span></li>
+        <li><b>dydaktyka</b><span>Kierownictwo prac dyplomowych przy zabytkach kamiennych, ceramicznych i z kości słoniowej; kursy konserwacji mozaiki antycznej w Ochrydzie</span></li>
+        <li><b>nauka</b><span>Publikacje m.in. w „Ochronie Zabytków”, referaty na międzynarodowych kongresach konserwacji kamienia w Berlinie i Toruniu</span></li>
+      </ul>
+    </div>
+    <div class="prawa">
+      <div class="osoba"><img src="img/maria-300.webp" srcset="img/maria-300.webp 300w" sizes="200px" width="300" height="450" alt="Maria Rudy" loading="lazy" decoding="async"><p>mgr Maria Rudy<br>konserwator zabytków i dzieł sztuki</p></div>
+      <blockquote>„Moja pasja to umiejętne przetwarzanie spraw na pozór trudnych, wymagających wysiłku umysłowego i fizycznego, w zadania o lżejszym zabarwieniu i większej adrenalinie.”<b>Chciejmy chcieć!</b></blockquote>
+      <div class="wyr">
+        <h3>Wyróżnienia</h3>
+        <p>Dolnośląski Laur Konserwatorski 2017 za konserwację barokowego sarkofagu z bazyliki w Trzebnicy. Medal Marszałka Województwa Kujawsko-Pomorskiego „Hereditas Saeculorum” 2017. Dyplom Uznania „Pomocna Dłoń Zabytkom”, Słupsk 2018.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sek kontakt" id="kontakt">
+  <div class="wrap kon">
+    <div>
+      <h2>Zapytanie o konserwację lub ekspertyzę</h2>
+      <div class="odk"></div>
+      <p style="margin-top:28px">Proszę krótko opisać obiekt: czym jest, skąd pochodzi i w jakim jest stanie. Kilka zdjęć z różnych stron bardzo pomaga ocenić zakres prac.</p>
+      <a class="mail" href="mailto:kontakt@mariarudy.pl">kontakt@mariarudy.pl</a>
+    </div>
+    <form id="form" novalidate>
+      <div class="rzad">
+        <label>Imię i nazwisko lub instytucja<input name="kto" autocomplete="name"></label>
+        <label>E-mail<input name="email" type="email" autocomplete="email"></label>
+      </div>
+      <label>Obiekt i jego stan<textarea name="opis" placeholder="np. polichromowane epitafium kamienne, XVII w., łuszcząca się polichromia"></textarea></label>
+      <label>Zdjęcia obiektu<input name="zdjecia" type="file" accept="image/*" multiple></label>
+      <div><button class="btn" type="submit">Wyślij zapytanie</button></div>
+      <p class="uwaga" id="uwaga" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="stopka">
+  <div class="wrap">
+    <span><b>Maria Rudy</b> - konserwator dzieł sztuki, Toruń</span>
+    <span>&copy; 2026 Maria Rudy</span>
+    <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=mariarudy.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var b=document.querySelector('.burger'),m=document.getElementById('menu');
+  b.addEventListener('click',function(){var o=m.classList.toggle('otw');b.setAttribute('aria-expanded',o)});
+  m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.classList.remove('otw');b.setAttribute('aria-expanded','false')}});
+  // przewijanie torow strzalkami i mysza
+  document.querySelectorAll('[data-tor]').forEach(function(x){x.addEventListener('click',function(){var t=document.getElementById(x.dataset.tor);t.scrollBy({left:x.dataset.k*Math.min(t.clientWidth*.8,700),behavior:'smooth'})})});
+  document.querySelectorAll('.tor').forEach(function(t){
+    var d=false,sx=0,sl=0,ruch=0;
+    t.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;d=true;ruch=0;sx=e.clientX;sl=t.scrollLeft;t.classList.add('chwyt')});
+    window.addEventListener('pointermove',function(e){if(!d)return;ruch=Math.abs(e.clientX-sx);t.scrollLeft=sl-(e.clientX-sx)});
+    window.addEventListener('pointerup',function(){if(!d)return;d=false;t.classList.remove('chwyt')});
+    t.addEventListener('click',function(e){if(ruch>5){e.preventDefault();e.stopPropagation()}},true);
+  });
+  // aktywna pozycja menu
+  var linki=[].slice.call(m.querySelectorAll('a'));
+  var io=new IntersectionObserver(function(w){w.forEach(function(x){if(x.isIntersecting){linki.forEach(function(a){a.classList.toggle('akt',a.getAttribute('href')==='#'+x.target.id)})}})},{rootMargin:'-45% 0px -50% 0px'});
+  linki.forEach(function(a){var s=document.querySelector(a.getAttribute('href'));if(s)io.observe(s)});
+  document.getElementById('form').addEventListener('submit',function(e){e.preventDefault();document.getElementById('uwaga').textContent='To podgląd - formularz zacznie wysyłać zapytania na docelowej stronie.'});
+})();
+</script>
+</body>
+</html>
